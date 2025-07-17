@@ -42,6 +42,19 @@
   Special thanks to the original Tetris code contributor whose GitHub repository helped inspire and guide part of the implementation.
 </p>
 
+<h2>Components Used</h2>
+<ul>
+  <li>AAA Cells(x3)</li>
+  <li>Push Buttons(x5)</li>
+  <li>Push Switch(x1)</li>
+  <li>ESP32 DEV Module(x1)</li>
+  <li>2.4 inch TFT SPI Display(x1)</li>
+  <li>Rainbow Wires(Assorted)</li>
+  <li>Zero PCB(As per need)</li>
+  <li>Souldering Iron</li>
+  <li>Souldering Wire</li>
+</ul>
+
 <h2>Building Guide</h2>
 
 <h3>Step 1: Setting Up the Arduino IDE and Coding</h3>
