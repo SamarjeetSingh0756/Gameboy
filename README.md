@@ -1,7 +1,7 @@
 <h1 align="center">ESP32 Gameboy</h1>
 
 <p align="center">
-  <em>A compact Gameboy built using ESP32, coded in C for memory efficiency and performance.</em>
+  <em>A compact handheld Gameboy built with the ESP32 microcontroller, coded in C </em>
 </p>
 
 <hr>
@@ -9,13 +9,13 @@
 <h2>Overview</h2>
 
 <p>
-  This project is a custom handheld Gameboy designed and built using the <strong>ESP32</strong> microcontroller. The entire codebase is written in <strong>C</strong> to optimize for speed and memory usage on embedded hardware.
+  This project showcases a custom-built Gameboy powered by the <strong>ESP32</strong> microcontroller. All code is written in <strong>C</strong> to ensure fast performance and efficient memory usage — perfect for embedded hardware like the ESP32.
 </p>
 
 <h2>Author</h2>
 
 <p>
-  Created with passion by <strong>Samarjeet Singh</strong>
+  Created with passion by <strong>Samarjeet Singh</strong>.
 </p>
 
 <hr>
@@ -23,71 +23,70 @@
 <h2>Games Included</h2>
 
 <ul>
-  <li><strong>Snake</strong> – Classic arcade-style snake game fully coded from scratch</li>
-  <li><strong>Tetris</strong> – A version adapted from an open-source GitHub project (credits below)</li>
+  <li><strong>Snake</strong> – A fully original version of the classic snake game</li>
+  <li><strong>Tetris</strong> – Adapted and enhanced from an open-source GitHub project (credits below)</li>
 </ul>
 
 <h2>Features</h2>
 
 <ul>
-  <li>Lightweight and fast performance using native C</li>
-  <li>Optimized for the ESP32's memory constraints</li>
-  <li>Custom-designed hardware interface</li>
+  <li>Written entirely in C for lightweight and fast performance</li>
+  <li>Optimized to run within the ESP32’s limited memory</li>
+  <li>Simple, custom-designed handheld hardware</li>
 </ul>
-
 
 <h2>Credits</h2>
 
 <p>
-  Special thanks to the original Tetris code contributor whose GitHub repository helped inspire and guide part of the implementation.
+  A big thanks to the original contributor of the Tetris game code on GitHub — your work served as an excellent starting point for this project.
 </p>
 
 <h2>Components Used</h2>
 <ul>
-  <li>AAA Cells(x3)</li>
-  <li>Push Buttons(x5)</li>
-  <li>Push Switch(x1)</li>
-  <li>ESP32 DEV Module(x1)</li>
-  <li>2.4 inch TFT SPI Display(x1)</li>
-  <li>Rainbow Wires(Assorted)</li>
-  <li>Zero PCB(As per need)</li>
-  <li>Souldering Iron</li>
-  <li>Souldering Wire</li>
+  <li>AAA Batteries (x3)</li>
+  <li>Push Buttons (x5)</li>
+  <li>Push Switch (x1)</li>
+  <li>ESP32 Dev Module (x1)</li>
+  <li>2.4" SPI TFT Display (x1)</li>
+  <li>Assorted Rainbow Wires</li>
+  <li>Zero PCB (as required)</li>
+  <li>Soldering Iron</li>
+  <li>Solder Wire</li>
 </ul>
 
-<h2>Building Guide</h2>
+<h2>Build Guide</h2>
 
-<h3>Step 1: Setting Up the Arduino IDE and Coding</h3>
+<h3>Step 1: Setting Up Arduino IDE</h3>
 
 <ol>
-  <li>Download and install the <strong>Arduino IDE</strong> from <a href="https://www.arduino.cc/en/software" target="_blank">here</a>.</li>
-  <li>Open the IDE and go to <code>File > Preferences</code>. In the "Additional Board Manager URLs" box, paste:
+  <li>Download the <strong>Arduino IDE</strong> from <a href="https://www.arduino.cc/en/software" target="_blank">here</a>.</li>
+  <li>Open the IDE and go to <code>File > Preferences</code>. Under "Additional Board Manager URLs", paste:
     <pre>https://raw.githubusercontent.com/espressif/arduino-esp32/gh-pages/package_esp32_index.json</pre>
   </li>
-  <li>Go to <code>Tools > Board > Boards Manager</code>, search for <strong>ESP32</strong> and install it.</li>
+  <li>Next, go to <code>Tools > Board > Boards Manager</code>. Search for <strong>ESP32</strong> and install it.</li>
   <li>Select your board from <code>Tools > Board</code> (e.g., "ESP32 Dev Module").</li>
-  <li>Connect your ESP32 to the PC with a USB cable and select the correct COM port from <code>Tools > Port</code>.</li>
-  <li>Write your code in <strong>C language</strong> to make it efficient and lightweight.</li>
+  <li>Connect your ESP32 using a USB cable and select the correct COM port under <code>Tools > Port</code>.</li>
+  <li>Write your game code using <strong>C</strong> for speed and minimal memory usage.</li>
 </ol>
 
-<h3>Step 2: Testing Code and Fixing Bugs</h3>
+<h3>Step 2: Testing and Debugging</h3>
 
 <ol>
-  <li>Click the <strong>✓ (checkmark icon)</strong> to compile and verify your code.</li>
-  <li>If errors appear, carefully read and fix them step-by-step.</li>
-  <li>Try to optimize your code to use less memory and run smoother.</li>
+  <li>Click the <strong>✓</strong> (check icon) to compile and verify your code.</li>
+  <li>If there are any errors, troubleshoot them patiently, one at a time.</li>
+  <li>Keep optimizing your code to make it run smoother and use less memory.</li>
 </ol>
 
-<h3>Step 3: Uploading Code and Connecting Hardware</h3>
+<h3>Step 3: Uploading and Hardware Connections</h3>
 
 <ol>
-  <li>Once verified, click the <strong>→ (upload arrow)</strong> to upload the code to ESP32.</li>
-  <li>After uploading, begin connecting the hardware: TFT screen and buttons.</li>
+  <li>Once your code compiles successfully, click the <strong>→</strong> (upload arrow) to flash it to the ESP32.</li>
+  <li>After uploading, begin connecting the TFT display and buttons as described below.</li>
 </ol>
 
 <h3>Step 4: Wiring the Display and Buttons</h3>
 
-<p><strong>TFT SPI Display Wiring:</strong></p>
+<p><strong>TFT Display SPI Pinout:</strong></p>
 
 <table>
   <thead>
@@ -105,7 +104,7 @@
   </tbody>
 </table>
 
-<p><strong>Game Control Buttons Wiring:</strong></p>
+<p><strong>Game Control Button Mapping:</strong></p>
 
 <table>
   <thead>
@@ -120,33 +119,40 @@
   </tbody>
 </table>
 
-<p><em>Each button has two legs: connect one leg to the specified ESP32 pin and the other leg to GND.</em></p>
+<p><em>Each push button has two pins: connect one to the specified ESP32 GPIO, and the other to GND.</em></p>
 
-<h3>Step 5: Powering the Gameboy</h3>
+<h3>Step 5: Powering Your Gameboy</h3>
 
 <ul>
-  <li>Use <strong>3 x 1.5V AAA batteries</strong> in a battery holder.</li>
-  <li>Connect the <strong>positive (+)</strong> terminal to the <strong>VIN</strong> pin of ESP32.</li>
-  <li>Connect the <strong>negative (–)</strong> terminal to <strong>GND</strong> on ESP32 via a button or power switch.</li>
+  <li>Use <strong>3 x 1.5V AAA batteries</strong> connected in series.</li>
+  <li>Connect the <strong>positive (+)</strong> end to the <strong>VIN</strong> pin of the ESP32.</li>
+  <li>Connect the <strong>negative (–)</strong> end to <strong>GND</strong> through a power switch or button.</li>
 </ul>
 
-<p><strong>Tip:</strong> Always double-check your wiring before powering the circuit to prevent any short circuits.</p>
+<p><strong>⚠️ Tip:</strong> Always double-check your connections before turning the power on to avoid short circuits.</p>
 
-<h3>That's It!</h3>
+<h3>Done!</h3>
 
 <p>
-  When you power on the device:
+  Once powered:
   <ul>
-    <li>The screen will light up.</li>
-    <li>You can switch between games using the "Game Change" button.</li>
-    <li>Control gameplay using the directional buttons (Up, Down, Left, Right).</li>
+    <li>The TFT display should light up.</li>
+    <li>Use the <strong>Game Change</strong> button to toggle between games.</li>
+    <li>Use the directional buttons to control gameplay.</li>
   </ul>
 </p>
 
+<hr>
 
+<h2>Gameplay Demos</h2>
+
+<p align="center">
+  <img src="tetris-demo.gif" width="250" alt="Tetris Gameplay">
+  <img src="snake-demo.gif" width="250" alt="Snake Gameplay">
+</p>
 
 <hr>
 
 <p align="center">
-  <em>📦 Feel free to fork, modify, and contribute to this project!</em>
+  <em>📦 Feel free to fork, contribute, and build on this project!</em>
 </p>
